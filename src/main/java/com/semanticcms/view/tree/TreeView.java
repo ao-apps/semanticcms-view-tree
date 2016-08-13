@@ -74,6 +74,15 @@ public class TreeView extends View {
 		return null;
 	}
 
+	/**
+	 * This view does not provide additional information unobtainable from source content,
+	 * exclude from search indexes.
+	 */
+	@Override
+	public boolean getAllowRobots(Page page) {
+		return false;
+	}
+
 	@Override
 	public void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Page page) throws ServletException, IOException {
 		PageRef pageRef = page.getPageRef();
