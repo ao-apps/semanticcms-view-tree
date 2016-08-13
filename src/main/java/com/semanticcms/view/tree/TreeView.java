@@ -25,9 +25,6 @@ package com.semanticcms.view.tree;
 import com.aoindustries.encoding.TextInXhtmlEncoder;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.model.PageRef;
-import com.semanticcms.core.servlet.CaptureLevel;
-import com.semanticcms.core.servlet.CapturePage;
-import com.semanticcms.core.servlet.SemanticCMS;
 import com.semanticcms.core.servlet.View;
 import com.semanticcms.core.servlet.impl.NavigationTreeImpl;
 import java.io.IOException;
@@ -37,9 +34,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * TODO: Exclude search engines from this tree view (and many other views)
- */
 public class TreeView extends View {
 
 	static final String VIEW_NAME = "tree";
