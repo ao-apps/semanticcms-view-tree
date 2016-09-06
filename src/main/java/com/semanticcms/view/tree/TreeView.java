@@ -78,7 +78,7 @@ public class TreeView extends View {
 	 * exclude from search indexes.
 	 */
 	@Override
-	public boolean getAllowRobots(Page page) {
+	public boolean getAllowRobots(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Page page) {
 		return false;
 	}
 
