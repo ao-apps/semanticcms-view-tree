@@ -80,6 +80,12 @@ along with semanticcms-view-tree.  If not, see <http://www.gnu.org/licenses />.
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
+			<groupId>javax.el</groupId>
+			<artifactId>javax.el-api</artifactId>
+			<version>2.2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
 			<groupId>com.aoindustries</groupId>
 			<artifactId>ao-encoding</artifactId>
 			<version>1.4-SNAPSHOT</version>
