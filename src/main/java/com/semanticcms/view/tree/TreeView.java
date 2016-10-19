@@ -60,7 +60,12 @@ public class TreeView extends View {
 		HttpServletResponse response,
 		Page page
 	) {
-		return "Page Tree" + TITLE_SEPARATOR + page.getTitle() + TITLE_SEPARATOR + page.getPageRef().getBook().getTitle();
+		String bookTitle = page.getPageRef().getBook().getTitle();
+		if(bookTitle != null && !bookTitle.isEmpty()) {
+			return "Page Tree" + TITLE_SEPARATOR + page.getTitle() + TITLE_SEPARATOR + bookTitle;
+		} else {
+			return "Page Tree" + TITLE_SEPARATOR + page.getTitle();
+		}
 	}
 
 	@Override
