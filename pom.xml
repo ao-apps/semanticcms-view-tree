@@ -32,7 +32,7 @@ along with semanticcms-view-tree.  If not, see <http://www.gnu.org/licenses />.
 
 	<groupId>com.semanticcms</groupId>
 	<artifactId>semanticcms-view-tree</artifactId>
-	<version>1.4.1</version>
+	<version>1.4.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>SemanticCMS View Tree</name>
@@ -44,7 +44,7 @@ along with semanticcms-view-tree.  If not, see <http://www.gnu.org/licenses />.
 		<connection>scm:git:git://github.com/aoindustries/semanticcms-view-tree.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-view-tree.git</developerConnection>
 		<url>http://github.com/aoindustries/semanticcms-view-tree</url>
-		<tag>semanticcms-view-tree-1.4.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<profiles>
