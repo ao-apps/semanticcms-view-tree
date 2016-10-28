@@ -7,9 +7,6 @@
 * [Maven Central Repository](https://search.maven.org/#search%7Cgav%7C1%7Cg:%22com.semanticcms%22%20AND%20a:%22semanticcms-view-tree%22)
 * [GitHub](https://github.com/aoindustries/semanticcms-view-tree)
 
-## Modules
-* [SemanticCMS View Tree Book](https://semanticcms.com/view-tree/book/)
-
 ## Contact Us
 For questions or support, please [contact us](https://www.aoindustries.com/contact):
 
