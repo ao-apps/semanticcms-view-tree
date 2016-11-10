@@ -36,13 +36,12 @@ along with semanticcms-view-tree.  If not, see <http://www.gnu.org/licenses />.
 	<packaging>jar</packaging>
 
 	<properties>
-		<bookPath>/view-tree</bookPath>
 		<shortTitle>View Tree</shortTitle>
 		<description.html><![CDATA[<a target="_top" href="https://semanticcms.com/">SemanticCMS</a> view of the tree of pages and elements starting at the current page.]]></description.html>
 	</properties>
 
 	<name>SemanticCMS View Tree</name>
-	<url>https://semanticcms.com${bookPath}/</url><!-- Can't inherit due to multi-module -->
+	<url>https://semanticcms.com/view-tree/</url>
 	<description>SemanticCMS view of the tree of pages and elements starting at the current page.</description>
 	<inceptionYear>2013</inceptionYear>
 
