@@ -1,6 +1,6 @@
 /*
  * semanticcms-view-tree - SemanticCMS view of the tree of pages and elements starting at the current page.
- * Copyright (C) 2016  AO Industries, Inc.
+ * Copyright (C) 2016, 2017  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -23,8 +23,10 @@
 package com.semanticcms.view.tree;
 
 import com.aoindustries.encoding.TextInXhtmlEncoder;
+import com.semanticcms.core.model.BookRef;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.model.PageRef;
+import com.semanticcms.core.servlet.SemanticCMS;
 import com.semanticcms.core.servlet.View;
 import com.semanticcms.core.servlet.impl.NavigationTreeImpl;
 import java.io.IOException;
@@ -60,7 +62,7 @@ public class TreeView extends View {
 		HttpServletResponse response,
 		Page page
 	) {
-		String bookTitle = page.getPageRef().getBook().getTitle();
+		String bookTitle = SemanticCMS.getInstance(servletContext).getBook(page.getPageRef().getBookRef()).getTitle();
 		if(bookTitle != null && !bookTitle.isEmpty()) {
 			return "Page Tree" + TITLE_SEPARATOR + page.getTitle() + TITLE_SEPARATOR + bookTitle;
 		} else {
@@ -90,6 +92,7 @@ public class TreeView extends View {
 	@Override
 	public void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Page page) throws ServletException, IOException {
 		PageRef pageRef = page.getPageRef();
+		BookRef bookRef = pageRef.getBookRef();
 		PrintWriter out = response.getWriter();
 		out.print("<h1>Page Tree of ");
 		TextInXhtmlEncoder.encodeTextInXhtml(page.getTitle(), out);
@@ -104,7 +107,8 @@ public class TreeView extends View {
 			false, // yuiConfig
 			true, // includeElements
 			null, // target
-			pageRef.getBookName(),
+			bookRef.getDomain(),
+			bookRef.getName(),
 			pageRef.getPath(),
 			null, // linksToBook
 			null, // linksToPage
