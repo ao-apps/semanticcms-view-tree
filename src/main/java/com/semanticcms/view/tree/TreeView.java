@@ -110,6 +110,7 @@ public class TreeView extends View {
 			bookRef.getDomain(),
 			bookRef.getName(),
 			pageRef.getPath(),
+			null, // linksToDomain
 			null, // linksToBook
 			null, // linksToPage
 			0
