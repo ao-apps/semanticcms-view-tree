@@ -108,8 +108,8 @@ public class TreeView extends View {
 			true, // includeElements
 			null, // target
 			bookRef.getDomain(),
-			bookRef.getName(),
-			pageRef.getPath(),
+			bookRef.getPath(),
+			pageRef.getPath().toString(),
 			null, // linksToDomain
 			null, // linksToBook
 			null, // linksToPage
