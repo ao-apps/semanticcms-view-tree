@@ -23,12 +23,12 @@
 package com.semanticcms.view.tree;
 
 import com.aoindustries.encoding.TextInXhtmlEncoder;
+import com.semanticcms.core.controller.SemanticCMS;
 import com.semanticcms.core.model.BookRef;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.model.PageRef;
-import com.semanticcms.core.servlet.SemanticCMS;
-import com.semanticcms.core.servlet.View;
-import com.semanticcms.core.servlet.impl.NavigationTreeImpl;
+import com.semanticcms.core.renderer.html.NavigationTreeRenderer;
+import com.semanticcms.core.renderer.html.View;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletContext;
@@ -97,7 +97,7 @@ public class TreeView extends View {
 		out.print("<h1>Page Tree of ");
 		TextInXhtmlEncoder.encodeTextInXhtml(page.getTitle(), out);
 		out.println("</h1>");
-		NavigationTreeImpl.writeNavigationTreeImpl(
+		NavigationTreeRenderer.writeNavigationTreeImpl(
 			servletContext,
 			request,
 			response,
