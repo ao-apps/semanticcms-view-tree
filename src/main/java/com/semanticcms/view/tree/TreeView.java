@@ -1,6 +1,6 @@
 /*
  * semanticcms-view-tree - SemanticCMS view of the tree of pages and elements starting at the current page.
- * Copyright (C) 2016, 2017  AO Industries, Inc.
+ * Copyright (C) 2016, 2017, 2018  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -97,7 +97,7 @@ public class TreeView extends View {
 		out.print("<h1>Page Tree of ");
 		TextInXhtmlEncoder.encodeTextInXhtml(page.getTitle(), out);
 		out.println("</h1>");
-		NavigationTreeRenderer.writeNavigationTreeImpl(
+		NavigationTreeRenderer.writeNavigationTree(
 			servletContext,
 			request,
 			response,
