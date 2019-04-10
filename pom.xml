@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms-view-tree - SemanticCMS view of the tree of pages and elements starting at the current page.
-Copyright (C) 2016, 2017, 2018  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2018, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -37,7 +37,7 @@ along with semanticcms-view-tree.  If not, see <http://www.gnu.org/licenses />.
 		<description.html><![CDATA[<a target="_top" href="https://semanticcms.com/">SemanticCMS</a> view of the tree of pages and elements starting at the current page.]]></description.html>
 	</properties>
 
-	<name>SemanticCMS View Tree</name>
+	<name>SemanticCMS 2 View Tree</name>
 	<url>https://semanticcms.com/view-tree/</url>
 	<description>SemanticCMS view of the tree of pages and elements starting at the current page.</description>
 	<inceptionYear>2013</inceptionYear>
