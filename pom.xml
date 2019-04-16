@@ -37,7 +37,7 @@ along with semanticcms-view-tree.  If not, see <http://www.gnu.org/licenses />.
 		<description.html><![CDATA[<a target="_top" href="https://semanticcms.com/">SemanticCMS</a> view of the tree of pages and elements starting at the current page.]]></description.html>
 	</properties>
 
-	<name>SemanticCMS 1 View Tree</name>
+	<name>SemanticCMS View Tree</name>
 	<url>https://semanticcms.com/view-tree/</url>
 	<description>SemanticCMS view of the tree of pages and elements starting at the current page.</description>
 	<inceptionYear>2013</inceptionYear>
