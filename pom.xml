@@ -61,11 +61,11 @@ along with semanticcms-view-tree.  If not, see <http://www.gnu.org/licenses />.
 							<links>
 								<link>${javac.link.javaApi}</link>
 								<link>${javac.link.javaeeApi.6}</link>
-								<link>https://aoindustries.com/ao-encoding/apidocs</link>
-								<link>https://aoindustries.com/ao-net-types/apidocs</link>
-								<link>https://semanticcms.com/core/controller/apidocs</link>
-								<link>https://semanticcms.com/core/model/apidocs</link>
-								<link>https://semanticcms.com/core/renderer/html/apidocs</link>
+								<link>https://aoindustries.com/ao-encoding/apidocs/</link>
+								<link>https://aoindustries.com/ao-net-types/apidocs/</link>
+								<link>https://semanticcms.com/core/controller/apidocs/</link>
+								<link>https://semanticcms.com/core/model/apidocs/</link>
+								<link>https://semanticcms.com/core/renderer/html/apidocs/</link>
 							</links>
 						</configuration>
 					</plugin>
