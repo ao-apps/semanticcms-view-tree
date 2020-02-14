@@ -1,6 +1,6 @@
 /*
  * semanticcms-view-tree - SemanticCMS view of the tree of pages and elements starting at the current page.
- * Copyright (C) 2016, 2017, 2018  AO Industries, Inc.
+ * Copyright (C) 2016, 2017, 2018, 2020  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -22,13 +22,12 @@
  */
 package com.semanticcms.view.tree;
 
-import com.aoindustries.encoding.TextInXhtmlEncoder;
+import com.aoindustries.html.Html;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.model.PageRef;
 import com.semanticcms.core.servlet.View;
 import com.semanticcms.core.servlet.impl.NavigationTreeImpl;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -88,17 +87,16 @@ public class TreeView extends View {
 	}
 
 	@Override
-	public void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Page page) throws ServletException, IOException {
+	public void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Html html, Page page) throws ServletException, IOException {
 		PageRef pageRef = page.getPageRef();
-		PrintWriter out = response.getWriter();
-		out.print("<h1>Page Tree of ");
-		TextInXhtmlEncoder.encodeTextInXhtml(page.getTitle(), out);
-		out.println("</h1>");
+		html.out.write("<h1>Page Tree of ");
+		html.text(page.getTitle());
+		html.out.write("</h1>\n");
 		NavigationTreeImpl.writeNavigationTreeImpl(
 			servletContext,
 			request,
 			response,
-			out,
+			html,
 			page,
 			false, // skipRoot
 			false, // yuiConfig
