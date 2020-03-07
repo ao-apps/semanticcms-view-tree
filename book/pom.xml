@@ -35,8 +35,6 @@ along with semanticcms-view-tree.  If not, see <http://www.gnu.org/licenses />.
 	<properties>
 		<!-- These values are copied from the project being documented -->
 		<documented.artifactId>semanticcms-view-tree</documented.artifactId>
-		<documented.javaVersion>1.8</documented.javaVersion>
-		<documented.javac.link.javaApi>${javac.link.javaApi.jdk8}</documented.javac.link.javaApi>
 		<documented.name>SemanticCMS View Tree</documented.name>
 		<documented.shortTitle>View Tree</documented.shortTitle>
 		<documented.description>SemanticCMS view of the tree of pages and elements starting at the current page.</documented.description>
