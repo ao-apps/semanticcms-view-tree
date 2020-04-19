@@ -34,7 +34,7 @@ along with semanticcms-view-tree.  If not, see <http://www.gnu.org/licenses />.
 
 	<properties>
 		<shortTitle>View Tree</shortTitle>
-		<description.html><![CDATA[<a target="_top" href="https://semanticcms.com/">SemanticCMS</a> view of the tree of pages and elements starting at the current page.]]></description.html>
+		<description.html><![CDATA[<a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> view of the tree of pages and elements starting at the current page.]]></description.html>
 	</properties>
 
 	<name>SemanticCMS View Tree²</name>
