@@ -105,20 +105,20 @@ along with semanticcms-view-tree.  If not, see <http://www.gnu.org/licenses />.
 									<artifactItems>
 										<!-- Direct -->
 										<artifactItem>
-											<groupId>com.aoindustries</groupId><artifactId>ao-fluent-html</artifactId>
-											<classifier>javadoc</classifier><includes>element-list, package-list</includes>
+											<groupId>com.aoindustries</groupId><artifactId>ao-fluent-html</artifactId><classifier>javadoc</classifier>
+											<includes>element-list, package-list</includes>
 											<outputDirectory>${project.build.directory}/offlineLinks/com.aoindustries/ao-fluent-html</outputDirectory>
 										</artifactItem>
 										<!-- ao-javadoc-offline: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId> -->
 										<!-- ao-javadoc-offline: <groupId>javax.servlet.jsp</groupId><artifactId>javax.servlet.jsp-api</artifactId> -->
 										<artifactItem>
-											<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId>
-											<classifier>javadoc</classifier><includes>element-list, package-list</includes>
+											<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><classifier>javadoc</classifier>
+											<includes>element-list, package-list</includes>
 											<outputDirectory>${project.build.directory}/offlineLinks/com.semanticcms/semanticcms-core-model</outputDirectory>
 										</artifactItem>
 										<artifactItem>
-											<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId>
-											<classifier>javadoc</classifier><includes>element-list, package-list</includes>
+											<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId><classifier>javadoc</classifier>
+											<includes>element-list, package-list</includes>
 											<outputDirectory>${project.build.directory}/offlineLinks/com.semanticcms/semanticcms-core-servlet</outputDirectory>
 										</artifactItem>
 									</artifactItems>
