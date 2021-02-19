@@ -1,6 +1,6 @@
 /*
  * semanticcms-view-tree - SemanticCMS view of the tree of pages and elements starting at the current page.
- * Copyright (C) 2016, 2017, 2018, 2020  AO Industries, Inc.
+ * Copyright (C) 2016, 2017, 2018, 2020, 2021  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -22,7 +22,7 @@
  */
 package com.semanticcms.view.tree;
 
-import com.aoindustries.html.Html;
+import com.aoindustries.html.Document;
 import com.semanticcms.core.controller.SemanticCMS;
 import com.semanticcms.core.model.BookRef;
 import com.semanticcms.core.model.Page;
@@ -107,17 +107,17 @@ public class TreeView extends View {
 	}
 
 	@Override
-	public void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Html html, Page page) throws ServletException, IOException {
+	public void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Document document, Page page) throws ServletException, IOException {
 		PageRef pageRef = page.getPageRef();
 		BookRef bookRef = pageRef.getBookRef();
-		html.out.write("<h1>Page Tree of ");
-		html.text(page.getTitle());
-		html.out.write("</h1>\n");
+		document.out.write("<h1>Page Tree of ");
+		document.text(page.getTitle());
+		document.out.write("</h1>\n");
 		NavigationTreeRenderer.writeNavigationTree(
 			servletContext,
 			request,
 			response,
-			html,
+			document,
 			page,
 			false, // skipRoot
 			false, // yuiConfig
