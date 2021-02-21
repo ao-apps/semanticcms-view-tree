@@ -107,9 +107,9 @@ public class TreeView extends View {
 	@Override
 	public void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Document document, Page page) throws ServletException, IOException {
 		PageRef pageRef = page.getPageRef();
-		document.out.write("<h1>Page Tree of ");
-		document.text(page.getTitle());
-		document.out.write("</h1>\n");
+		document.h1__(h1 -> h1
+			.text("Page Tree of ").text(page.getTitle())
+		).nl();
 		NavigationTreeImpl.writeNavigationTreeImpl(
 			servletContext,
 			request,
