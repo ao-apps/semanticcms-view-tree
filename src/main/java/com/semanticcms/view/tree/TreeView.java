@@ -22,7 +22,7 @@
  */
 package com.semanticcms.view.tree;
 
-import com.aoindustries.html.Document;
+import com.aoindustries.html.FlowContent;
 import com.semanticcms.core.controller.SemanticCMS;
 import com.semanticcms.core.model.BookRef;
 import com.semanticcms.core.model.Page;
@@ -107,17 +107,17 @@ public class TreeView extends View {
 	}
 
 	@Override
-	public void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Document document, Page page) throws ServletException, IOException {
+	public <__ extends FlowContent<__>> void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, __ flow, Page page) throws ServletException, IOException {
 		PageRef pageRef = page.getPageRef();
 		BookRef bookRef = pageRef.getBookRef();
-		document.h1__(h1 -> h1
+		flow.h1__(h1 -> h1
 			.text("Page Tree of ").text(page.getTitle())
 		).nl();
 		NavigationTreeRenderer.writeNavigationTree(
 			servletContext,
 			request,
 			response,
-			document,
+			flow,
 			page,
 			false, // skipRoot
 			false, // yuiConfig
