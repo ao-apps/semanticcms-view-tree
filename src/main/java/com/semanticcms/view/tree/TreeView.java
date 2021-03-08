@@ -112,7 +112,7 @@ public class TreeView extends View {
 		BookRef bookRef = pageRef.getBookRef();
 		flow.h1__(h1 -> h1
 			.text("Page Tree of ").text(page.getTitle())
-		).nl();
+		);
 		NavigationTreeRenderer.writeNavigationTree(
 			servletContext,
 			request,
