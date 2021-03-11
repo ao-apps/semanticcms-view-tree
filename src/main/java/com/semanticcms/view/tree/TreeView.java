@@ -23,6 +23,7 @@
 package com.semanticcms.view.tree;
 
 import com.aoindustries.html.FlowContent;
+import com.aoindustries.html.servlet.DocumentEE;
 import com.semanticcms.core.controller.SemanticCMS;
 import com.semanticcms.core.model.BookRef;
 import com.semanticcms.core.model.Page;
@@ -107,7 +108,7 @@ public class TreeView extends View {
 	}
 
 	@Override
-	public <__ extends FlowContent<__>> void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, __ flow, Page page) throws ServletException, IOException {
+	public <__ extends FlowContent<DocumentEE, __>> void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, __ flow, Page page) throws ServletException, IOException {
 		PageRef pageRef = page.getPageRef();
 		BookRef bookRef = pageRef.getBookRef();
 		flow.h1__(h1 -> h1
