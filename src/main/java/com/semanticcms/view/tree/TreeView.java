@@ -22,7 +22,7 @@
  */
 package com.semanticcms.view.tree;
 
-import com.aoindustries.html.servlet.FlowContent;
+import com.aoapps.html.servlet.FlowContent;
 import com.semanticcms.core.controller.SemanticCMS;
 import com.semanticcms.core.model.BookRef;
 import com.semanticcms.core.model.Page;
