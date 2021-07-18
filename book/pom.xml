@@ -29,7 +29,7 @@ along with semanticcms-view-tree.  If not, see <http://www.gnu.org/licenses />.
 		<relativePath>../../parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-tree-book</artifactId><version>1.6.0</version>
+	<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-tree-book</artifactId><version>1.6.0-POST-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<properties>
@@ -74,7 +74,7 @@ along with semanticcms-view-tree.  If not, see <http://www.gnu.org/licenses />.
 		<connection>scm:git:git://github.com/aoindustries/semanticcms-view-tree.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-view-tree.git</developerConnection>
 		<url>https://github.com/aoindustries/semanticcms-view-tree</url>
-		<tag>semanticcms-view-tree-book-1.6.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
