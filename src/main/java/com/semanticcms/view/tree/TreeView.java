@@ -39,7 +39,7 @@ import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class TreeView extends View {
+public final class TreeView extends View {
 
 	public static final String NAME = "tree";
 
@@ -55,7 +55,9 @@ public class TreeView extends View {
 		}
 	}
 
-	private TreeView() {}
+	private TreeView() {
+		// Do nothing
+	}
 
 	@Override
 	public Group getGroup() {
