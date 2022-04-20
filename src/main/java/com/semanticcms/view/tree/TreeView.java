@@ -42,97 +42,97 @@ import javax.servlet.http.HttpServletResponse;
 
 public final class TreeView extends View {
 
-	public static final String NAME = "tree";
+  public static final String NAME = "tree";
 
-	@WebListener("Registers the \"" + NAME + "\" view in HtmlRenderer.")
-	public static class Initializer implements ServletContextListener {
-		@Override
-		public void contextInitialized(ServletContextEvent event) {
-			HtmlRenderer.getInstance(event.getServletContext()).addView(new TreeView());
-		}
-		@Override
-		public void contextDestroyed(ServletContextEvent event) {
-			// Do nothing
-		}
-	}
+  @WebListener("Registers the \"" + NAME + "\" view in HtmlRenderer.")
+  public static class Initializer implements ServletContextListener {
+    @Override
+    public void contextInitialized(ServletContextEvent event) {
+      HtmlRenderer.getInstance(event.getServletContext()).addView(new TreeView());
+    }
+    @Override
+    public void contextDestroyed(ServletContextEvent event) {
+      // Do nothing
+    }
+  }
 
-	private TreeView() {
-		// Do nothing
-	}
+  private TreeView() {
+    // Do nothing
+  }
 
-	@Override
-	public Group getGroup() {
-		return Group.FIXED;
-	}
+  @Override
+  public Group getGroup() {
+    return Group.FIXED;
+  }
 
-	@Override
-	public String getDisplay() {
-		return "Tree";
-	}
+  @Override
+  public String getDisplay() {
+    return "Tree";
+  }
 
-	@Override
-	public String getName() {
-		return NAME;
-	}
+  @Override
+  public String getName() {
+    return NAME;
+  }
 
-	@Override
-	public String getTitle(
-		ServletContext servletContext,
-		HttpServletRequest request,
-		HttpServletResponse response,
-		Page page
-	) {
-		String bookTitle = SemanticCMS.getInstance(servletContext).getBook(page.getPageRef().getBookRef()).getTitle();
-		if(bookTitle != null && !bookTitle.isEmpty()) {
-			return "Page Tree" + TITLE_SEPARATOR + page.getTitle() + TITLE_SEPARATOR + bookTitle;
-		} else {
-			return "Page Tree" + TITLE_SEPARATOR + page.getTitle();
-		}
-	}
+  @Override
+  public String getTitle(
+    ServletContext servletContext,
+    HttpServletRequest request,
+    HttpServletResponse response,
+    Page page
+  ) {
+    String bookTitle = SemanticCMS.getInstance(servletContext).getBook(page.getPageRef().getBookRef()).getTitle();
+    if (bookTitle != null && !bookTitle.isEmpty()) {
+      return "Page Tree" + TITLE_SEPARATOR + page.getTitle() + TITLE_SEPARATOR + bookTitle;
+    } else {
+      return "Page Tree" + TITLE_SEPARATOR + page.getTitle();
+    }
+  }
 
-	@Override
-	public String getDescription(Page page) {
-		return null;
-	}
+  @Override
+  public String getDescription(Page page) {
+    return null;
+  }
 
-	@Override
-	public String getKeywords(Page page) {
-		return null;
-	}
+  @Override
+  public String getKeywords(Page page) {
+    return null;
+  }
 
-	/**
-	 * This view does not provide additional information unobtainable from source content,
-	 * exclude from search indexes.
-	 */
-	@Override
-	public boolean getAllowRobots(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Page page) {
-		return false;
-	}
+  /**
+   * This view does not provide additional information unobtainable from source content,
+   * exclude from search indexes.
+   */
+  @Override
+  public boolean getAllowRobots(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Page page) {
+    return false;
+  }
 
-	@Override
-	public <__ extends FlowContent<__>> void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, __ flow, Page page) throws ServletException, IOException {
-		PageRef pageRef = page.getPageRef();
-		BookRef bookRef = pageRef.getBookRef();
-		flow.h1__(h1 -> h1
-			.text("Page Tree of ").text(page.getTitle())
-		);
-		NavigationTreeRenderer.writeNavigationTree(
-			servletContext,
-			request,
-			response,
-			flow,
-			page,
-			false, // skipRoot
-			false, // yuiConfig
-			true, // includeElements
-			null, // target
-			bookRef.getDomain(),
-			bookRef.getPath(),
-			pageRef.getPath().toString(),
-			null, // linksToDomain
-			null, // linksToBook
-			null, // linksToPage
-			0
-		);
-	}
+  @Override
+  public <__ extends FlowContent<__>> void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, __ flow, Page page) throws ServletException, IOException {
+    PageRef pageRef = page.getPageRef();
+    BookRef bookRef = pageRef.getBookRef();
+    flow.h1__(h1 -> h1
+      .text("Page Tree of ").text(page.getTitle())
+    );
+    NavigationTreeRenderer.writeNavigationTree(
+      servletContext,
+      request,
+      response,
+      flow,
+      page,
+      false, // skipRoot
+      false, // yuiConfig
+      true, // includeElements
+      null, // target
+      bookRef.getDomain(),
+      bookRef.getPath(),
+      pageRef.getPath().toString(),
+      null, // linksToDomain
+      null, // linksToBook
+      null, // linksToPage
+      0
+    );
+  }
 }
