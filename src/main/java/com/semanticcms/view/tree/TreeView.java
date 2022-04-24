@@ -48,6 +48,7 @@ public final class TreeView extends View {
     public void contextInitialized(ServletContextEvent event) {
       SemanticCMS.getInstance(event.getServletContext()).addView(new TreeView());
     }
+
     @Override
     public void contextDestroyed(ServletContextEvent event) {
       // Do nothing
@@ -75,10 +76,10 @@ public final class TreeView extends View {
 
   @Override
   public String getTitle(
-    ServletContext servletContext,
-    HttpServletRequest request,
-    HttpServletResponse response,
-    Page page
+      ServletContext servletContext,
+      HttpServletRequest request,
+      HttpServletResponse response,
+      Page page
   ) {
     String bookTitle = page.getPageRef().getBook().getTitle();
     if (bookTitle != null && !bookTitle.isEmpty()) {
@@ -111,23 +112,23 @@ public final class TreeView extends View {
   public <__ extends FlowContent<__>> void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, __ flow, Page page) throws ServletException, IOException {
     PageRef pageRef = page.getPageRef();
     flow.h1__(h1 -> h1
-      .text("Page Tree of ").text(page.getTitle())
+            .text("Page Tree of ").text(page.getTitle())
     );
     NavigationTreeImpl.writeNavigationTreeImpl(
-      servletContext,
-      request,
-      response,
-      flow,
-      page,
-      false, // skipRoot
-      false, // yuiConfig
-      true, // includeElements
-      null, // target
-      pageRef.getBookName(),
-      pageRef.getPath(),
-      null, // linksToBook
-      null, // linksToPage
-      0
+        servletContext,
+        request,
+        response,
+        flow,
+        page,
+        false, // skipRoot
+        false, // yuiConfig
+        true, // includeElements
+        null, // target
+        pageRef.getBookName(),
+        pageRef.getPath(),
+        null, // linksToBook
+        null, // linksToPage
+        0
     );
   }
 }
