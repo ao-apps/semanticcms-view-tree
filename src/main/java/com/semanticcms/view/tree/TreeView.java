@@ -40,10 +40,16 @@ import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * SemanticCMS view of the tree of pages and elements starting at the current page.
+ */
 public final class TreeView extends View {
 
   public static final String NAME = "tree";
 
+  /**
+   * Registers the "{@link #NAME}" view in {@link HtmlRenderer}.
+   */
   @WebListener("Registers the \"" + NAME + "\" view in HtmlRenderer.")
   public static class Initializer implements ServletContextListener {
     @Override
@@ -115,7 +121,7 @@ public final class TreeView extends View {
     PageRef pageRef = page.getPageRef();
     BookRef bookRef = pageRef.getBookRef();
     flow.h1__(h1 -> h1
-            .text("Page Tree of ").text(page.getTitle())
+        .text("Page Tree of ").text(page.getTitle())
     );
     NavigationTreeRenderer.writeNavigationTree(
         servletContext,
