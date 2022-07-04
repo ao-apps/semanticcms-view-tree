@@ -45,7 +45,7 @@ along with semanticcms-view-tree.  If not, see <https://www.gnu.org/licenses/>.
     <sonar.coverage.exclusions>**.*</sonar.coverage.exclusions>
   </properties>
 
-  <name>SemanticCMS View Tree²</name>
+  <name>SemanticCMS View Tree</name>
   <url>https://semanticcms.com/view-tree/</url>
   <description>SemanticCMS view of the tree of pages and elements starting at the current page.</description>
   <inceptionYear>2013</inceptionYear>

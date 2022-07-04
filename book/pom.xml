@@ -36,15 +36,15 @@ along with semanticcms-view-tree.  If not, see <https://www.gnu.org/licenses/>.
     <module.name>com.semanticcms.view.tree.book</module.name>
     <!-- These values are copied from the project being documented -->
     <documented.artifactId>semanticcms-view-tree</documented.artifactId>
-    <documented.name>SemanticCMS View Tree²</documented.name>
+    <documented.name>SemanticCMS View Tree</documented.name>
     <documented.description>SemanticCMS view of the tree of pages and elements starting at the current page.</documented.description>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
 
-  <name>SemanticCMS View Tree² Book</name>
+  <name>SemanticCMS View Tree Book</name>
   <url>https://semanticcms.com/view-tree/</url>
-  <description>Documentation for SemanticCMS View Tree² in SemanticCMS format.</description>
+  <description>Documentation for SemanticCMS View Tree in SemanticCMS format.</description>
   <inceptionYear>2013</inceptionYear>
 
   <licenses>
