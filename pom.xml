@@ -116,11 +116,6 @@ along with semanticcms-view-tree.  If not, see <https://www.gnu.org/licenses/>.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId>
         <configuration>
-          <usedDependencies>
-            <!-- Direct -->
-            <dependency>com.aoapps:ao-lang</dependency><!-- Required for module-info.java -->
-            <dependency>javax.servlet.jsp:javax.servlet.jsp-api</dependency><!-- Needed but declared unused, plugin bug? -->
-          </usedDependencies>
           <ignoredDependencies>
             <!-- No "module-info.java" in some release builds -->
             <dependency>com.aoapps:ao-collections</dependency>
@@ -148,13 +143,7 @@ along with semanticcms-view-tree.  If not, see <https://www.gnu.org/licenses/>.
                       <includes>element-list, package-list</includes>
                       <outputDirectory>${project.build.directory}/offlineLinks/com.aoapps/ao-fluent-html-servlet</outputDirectory>
                     </artifactItem>
-                    <artifactItem>
-                      <groupId>com.aoapps</groupId><artifactId>ao-lang</artifactId><classifier>javadoc</classifier>
-                      <includes>element-list, package-list</includes>
-                      <outputDirectory>${project.build.directory}/offlineLinks/com.aoapps/ao-lang</outputDirectory>
-                    </artifactItem>
                     <!-- ao-javadoc-offline: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId><classifier>javadoc</classifier> -->
-                    <!-- ao-javadoc-offline: <groupId>javax.servlet.jsp</groupId><artifactId>javax.servlet.jsp-api</artifactId><classifier>javadoc</classifier> -->
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><classifier>javadoc</classifier>
                       <includes>element-list, package-list</includes>
@@ -179,12 +168,7 @@ along with semanticcms-view-tree.  If not, see <https://www.gnu.org/licenses/>.
                   <url>https://oss.aoapps.com/fluent-html/servlet/apidocs/</url>
                   <location>${project.build.directory}/offlineLinks/com.aoapps/ao-fluent-html-servlet</location>
                 </offlineLink>
-                <offlineLink>
-                  <url>https://oss.aoapps.com/lang/apidocs/</url>
-                  <location>${project.build.directory}/offlineLinks/com.aoapps/ao-lang</location>
-                </offlineLink>
                 <!-- ao-javadoc-offline: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId><classifier>javadoc</classifier> -->
-                <!-- ao-javadoc-offline: <groupId>javax.servlet.jsp</groupId><artifactId>javax.servlet.jsp-api</artifactId><classifier>javadoc</classifier> -->
                 <offlineLink>
                   <url>https://semanticcms.com/core/model/apidocs/</url>
                   <location>${project.build.directory}/offlineLinks/com.semanticcms/semanticcms-core-model</location>
@@ -227,11 +211,7 @@ along with semanticcms-view-tree.  If not, see <https://www.gnu.org/licenses/>.
       <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-servlet</artifactId><version>0.7.0${POST-SNAPSHOT}</version>
       </dependency>
-      <dependency>
-        <groupId>com.aoapps</groupId><artifactId>ao-lang</artifactId><version>5.2.0${POST-SNAPSHOT}</version>
-      </dependency>
       <!-- javaee-web-api-bom: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId> -->
-      <!-- javaee-web-api-bom: <groupId>javax.servlet.jsp</groupId><artifactId>javax.servlet.jsp-api</artifactId> -->
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>1.14.1${POST-SNAPSHOT}</version>
       </dependency>
@@ -262,6 +242,9 @@ along with semanticcms-view-tree.  If not, see <https://www.gnu.org/licenses/>.
       </dependency>
       <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-io-buffer</artifactId><version>4.1.0${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-lang</artifactId><version>5.2.0${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-net-types</artifactId><version>2.0.2${POST-SNAPSHOT}</version>
@@ -300,6 +283,7 @@ along with semanticcms-view-tree.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>org.apache.commons</groupId><artifactId>commons-lang3</artifactId><version>3.12.0</version>
       </dependency>
       <!-- javaee-web-api-bom: <groupId>javax.el</groupId><artifactId>javax.el-api</artifactId> -->
+      <!-- javaee-web-api-bom: <groupId>javax.servlet.jsp</groupId><artifactId>javax.servlet.jsp-api</artifactId> -->
       <dependency>
         <groupId>joda-time</groupId><artifactId>joda-time</artifactId><version>2.12.2</version>
       </dependency>
@@ -318,13 +302,7 @@ along with semanticcms-view-tree.  If not, see <https://www.gnu.org/licenses/>.
       <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-servlet</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.aoapps</groupId><artifactId>ao-lang</artifactId>
-    </dependency>
-    <dependency>
       <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>javax.servlet.jsp</groupId><artifactId>javax.servlet.jsp-api</artifactId>
     </dependency>
     <dependency>
       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId>
