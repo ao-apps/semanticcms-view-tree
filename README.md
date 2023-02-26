@@ -23,7 +23,7 @@
 * [Project Home](https://semanticcms.com/view-tree/)
 * [Changelog](https://semanticcms.com/view-tree/changelog)
 * [API Docs](https://semanticcms.com/view-tree/apidocs/)
-* [Maven Central Repository](https://search.maven.org/artifact/com.semanticcms/semanticcms-view-tree)
+* [Maven Central Repository](https://central.sonatype.com/search?namespace=com.semanticcms&q=a%3Asemanticcms-view-tree)
 * [GitHub](https://github.com/ao-apps/semanticcms-view-tree)
 
 ## Contact Us
