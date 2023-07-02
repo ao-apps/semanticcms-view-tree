@@ -28,7 +28,9 @@ def upstreamProjects = [
   'parent', // <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId>
 
   // Direct
+  '../oss/fluent-html-any', // <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-any</artifactId>
   '../oss/fluent-html-servlet', // <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-servlet</artifactId>
+  '../oss/lang', // <groupId>com.aoapps</groupId><artifactId>ao-lang</artifactId>
   // No Jenkins: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId>
   'core/model', // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId>
   'core/servlet', // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId>
