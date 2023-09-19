@@ -41,6 +41,8 @@ along with semanticcms-view-tree.  If not, see <https://www.gnu.org/licenses/>.
     <documented.artifactId>semanticcms-view-tree</documented.artifactId>
     <documented.name>SemanticCMS View Tree</documented.name>
     <documented.description>SemanticCMS view of the tree of pages and elements starting at the current page.</documented.description>
+    <javadoc.breadcrumbs><![CDATA[<a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a>
+/ <a target="${javadoc.target}" href="${project.url}">View Tree</a>]]></javadoc.breadcrumbs>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
