@@ -259,7 +259,7 @@ along with semanticcms-view-tree.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-servlet</artifactId><version>0.7.0${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
-        <groupId>com.aoapps</groupId><artifactId>ao-lang</artifactId><version>5.5.0${POST-SNAPSHOT}</version>
+        <groupId>com.aoapps</groupId><artifactId>ao-lang</artifactId><version>5.5.1${POST-SNAPSHOT}</version>
       </dependency>
       <!-- javaee-web-api-bom: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId> -->
       <dependency>
