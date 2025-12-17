@@ -8,14 +8,14 @@
 [![semantic versioning: 2.0.0](https://semanticcms.com/ao-badges/semver-2.0.0.svg)](https://semver.org/spec/v2.0.0.html)
 [![license: LGPL v3](https://semanticcms.com/ao-badges/license-lgpl-3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
-[![Build](https://github.com/ao-apps/semanticcms-view-tree/actions/workflows/build.yml/badge.svg?branch=1.x)](https://github.com/ao-apps/semanticcms-view-tree/actions?query=workflow%3ABuild)
+[![Build](https://github.com/ao-apps/semanticcms-view-tree/actions/workflows/build.yml/badge.svg?branch=2.x)](https://github.com/ao-apps/semanticcms-view-tree/actions?query=workflow%3ABuild)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.semanticcms/semanticcms-view-tree/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.semanticcms/semanticcms-view-tree)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.semanticcms%3Asemanticcms-view-tree&metric=alert_status)](https://sonarcloud.io/dashboard?branch=1.x&id=com.semanticcms%3Asemanticcms-view-tree)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.semanticcms%3Asemanticcms-view-tree&metric=ncloc)](https://sonarcloud.io/component_measures?branch=1.x&id=com.semanticcms%3Asemanticcms-view-tree&metric=ncloc)  
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.semanticcms%3Asemanticcms-view-tree&metric=reliability_rating)](https://sonarcloud.io/component_measures?branch=1.x&id=com.semanticcms%3Asemanticcms-view-tree&metric=Reliability)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.semanticcms%3Asemanticcms-view-tree&metric=security_rating)](https://sonarcloud.io/component_measures?branch=1.x&id=com.semanticcms%3Asemanticcms-view-tree&metric=Security)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.semanticcms%3Asemanticcms-view-tree&metric=sqale_rating)](https://sonarcloud.io/component_measures?branch=1.x&id=com.semanticcms%3Asemanticcms-view-tree&metric=Maintainability)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.semanticcms%3Asemanticcms-view-tree&metric=coverage)](https://sonarcloud.io/component_measures?branch=1.x&id=com.semanticcms%3Asemanticcms-view-tree&metric=Coverage)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=2.x&project=com.semanticcms%3Asemanticcms-view-tree&metric=alert_status)](https://sonarcloud.io/dashboard?branch=2.x&id=com.semanticcms%3Asemanticcms-view-tree)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=2.x&project=com.semanticcms%3Asemanticcms-view-tree&metric=ncloc)](https://sonarcloud.io/component_measures?branch=2.x&id=com.semanticcms%3Asemanticcms-view-tree&metric=ncloc)  
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?branch=2.x&project=com.semanticcms%3Asemanticcms-view-tree&metric=reliability_rating)](https://sonarcloud.io/component_measures?branch=2.x&id=com.semanticcms%3Asemanticcms-view-tree&metric=Reliability)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?branch=2.x&project=com.semanticcms%3Asemanticcms-view-tree&metric=security_rating)](https://sonarcloud.io/component_measures?branch=2.x&id=com.semanticcms%3Asemanticcms-view-tree&metric=Security)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?branch=2.x&project=com.semanticcms%3Asemanticcms-view-tree&metric=sqale_rating)](https://sonarcloud.io/component_measures?branch=2.x&id=com.semanticcms%3Asemanticcms-view-tree&metric=Maintainability)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?branch=2.x&project=com.semanticcms%3Asemanticcms-view-tree&metric=coverage)](https://sonarcloud.io/component_measures?branch=2.x&id=com.semanticcms%3Asemanticcms-view-tree&metric=Coverage)
 
 [SemanticCMS view of the tree of pages and elements](https://github.com/ao-apps/semanticcms-view-tree) starting at the current page.
 
