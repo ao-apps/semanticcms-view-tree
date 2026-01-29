@@ -48,7 +48,7 @@ public final class TreeView extends View {
   public static final String NAME = "tree";
 
   /**
-   * Registers the "{@link #NAME}" view in {@link HtmlRenderer}.
+   * Registers the "{@link TreeView#NAME}" view in {@link HtmlRenderer}.
    */
   @WebListener("Registers the \"" + NAME + "\" view in HtmlRenderer.")
   public static class Initializer implements ServletContextListener {
